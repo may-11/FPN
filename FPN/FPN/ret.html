@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <meta name="Keywords" content="里親, ペット">
+    <meta name="description" content="株式会社ZiQの研修プログラム用サンプルサイトです。">
+    <title>Foster Parents Network</title>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="ret.css">
+</head>
+
+<body>
+    <div class="mainscreen">
+        <div class="header">
+            <img class="logo01" src="images/logo01.jpeg" alt="logo01">
+            <div class="header-list">
+                <ul>
+                    <li><a href="wfpn.html">FPNとは</a></li>
+                    <li><a href="ret.html">検索</a></li>
+                    <li><a href="store.html">店舗・関連商品</a></li>
+                    <li><a href="con.html">お申し込み・サービス</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copy-container">
+            <h1>新しい<span>家</span>族を見つけよう</h1>
+            <h2>このページでは、条件を設定しての検索が可能です。</h2>
+        </div>
+        <div class="contents">
+            <h1 class="section-title">検索はこちら</h1>
+
+
+            <!--種類-->
+
+            <p>種類<br>
+                <select name="kind">
+                 <option value="dog">犬</option>
+                 <option value="cat">猫</option>
+                 <option value="aqua">水中</option>
+                 <option value="reptiles">爬虫類</option>
+                 <option value="bird">鳥</option>
+                </select>
+            </p>
+
+
+            <!--年齢-->
+            <div class="checkbox box">
+                <label>
+             　<input class="checkbox01-input" name="checkbox01[]" type="checkbox" id="form02-01" value="05">
+              　<span class="checkbox01-parts">
+        　　　　　0~5歳
+              　</span>
+            　</label>
+                <label>
+             　<input class="checkbox01-input" name="checkbox01[]" type="checkbox" id="form02-02" value="610">
+              　<span class="checkbox01-parts">
+        　　　　　6〜10歳
+              　</span>
+            　</label>
+                <label>
+             　<input class="checkbox01-input" name="checkbox01[]" type="checkbox" id="form02-03" value="11">
+              　<span class="checkbox01-parts">
+        　　　　　11歳〜
+              　</span>
+            　</label>
+            </div>
+
+            <!--性別-->
+            <div class="contents-item">
+                <input class="form01" type="radio" id="form01-01" name="animal" value="male">
+                <label for="form01-01">オス</label>
+            </div>
+            <div class="contents-item">
+                <input class="form01" type="radio" id="form01-02" name="animal" value="female">
+                <label for="form01-02">メス</label>
+            </div>
+            <div class="contents-item">
+                <input class="form01" type="radio" id="form01-03" name="animal" value="none">
+                <label for="form01-03">指定無し</label>
+
+            </div>
+            <div class="contact-form"></div>
+
+            <input type="submit" class="ret-submit" value="検索"><input type="reset" value="リセット">
+
+        </div>
+        
+        <div class="footer">
+            <div class="footer-logo">FPN</div>
+            <div class="company-info">
+               <div class="flexBox">
+                <div class="sns">
+                    <a href="#"><i class="fa fa-twitter-square"></i><span class="hidden">Twitter</span></a>
+                    <a href="#"><i class="fa fa-facebook-square"></i><span class="hidden">Facebook</span></a>
+                    <a href="#"><i class="fa fa-instagram"></i><span class="hidden">Instagram</span></a>
+                </div>
+               </div>
+            
+            <address class="footer_company">〒106-0031 東京都港区西麻布1-14-5 永都ビルB1</address>
+            <p class="footer_copy">&copy; Foster Parents Network all rights reserved.</p>
+            </div>
+            <div class="footer-list">
+                <ul>
+                    <li>会社概要</li>
+                    <li>採用</li>
+                    <li>お問い合わせ</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

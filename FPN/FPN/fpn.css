@@ -1,0 +1,303 @@
+@charset "UTF-8";
+/* --------------------------------
+ * base
+ * -------------------------------- */
+
+html {
+    font-size: 62.5%;
+    padding: 0;
+    margin: 0;
+}
+
+/*1rem=10pxになる*/
+.header{
+    position: fixed;
+}
+
+body {
+    padding: 0;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    letter-spacing: 1px;
+    /*文字と文字の間のスペース*/
+    overflow-x: hidden;
+    /*画面の横幅を超えた部分（ｘなら横）を表示しない*/
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    /*paddingなどを納める*/
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+/* --------------------------------
+ * parts　使い回すやつ
+ * -------------------------------- */
+
+.heading {
+    display: block;
+    color: #d57328;
+    font-size: 4rem;
+    text-align: center;
+    line-height: 1;
+    padding: 30px 20px 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.heading_sub {
+    font-size: 1.8rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.flexBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /*横幅が足りなくなった時に下に*/
+}
+
+/* @media */
+
+@media (max-width: 600px) {
+    .heading {
+        font-size: 2.6rem;
+    }
+    .btn {
+        padding: 10px 15px;
+        font-size: 1.6rem;
+    }
+}
+
+/* --------------------------------
+ * header
+ * -------------------------------- */
+.header {
+    background-color: rgb(135, 206, 250);
+    color: #fff;
+    height: 90px;
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+.logo01 {
+    margin: 5px 5px 5px 5px;
+    height: 80px;
+    width: auto;
+    border-radius: 50%;
+}
+
+li {
+    list-style: none;
+    font-size: 2rem;
+    margin: auto;
+
+}
+
+.header-list {
+    float: left;
+}
+
+.header-list li {
+    float: left;
+    padding: 20px 20px;
+
+}
+
+/* --------------------------------
+ * menu
+ * -------------------------------- */
+
+
+.nav {
+    list-style: none;
+    padding: 0;
+    display: table;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.navList{
+padding: 0px;    
+}
+
+.nav li {
+    display: table-cell;
+    width: 120px;
+    text-align: center;
+}
+
+.nav a {
+    display: block;
+    background: #555;
+    color: #fff;
+    padding: 5px 0;
+    cursor: pointer;
+    transition: 0.2s;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.nav a:hover {
+    background: #888;
+}
+
+.dropDown {
+    padding: 0;
+    font-size: 0.9em;
+    display: none;
+}
+
+.dropDown li {
+    display: inline-block;
+}
+
+.menu {
+    padding: 60px 10px;
+    background: url(images/menu_bg.jpg) 50%;
+    background-size: cover;
+}
+
+.menu_heading {
+    color: #a70707;
+    width: 10em;
+    margin: 0 auto;
+}
+
+
+/*--------
+js
+--------*/
+ html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+
+/* @media */
+
+@media(max-width:520px) {
+    .menuItem {
+        width: 350px;
+        height: 210px;
+    }
+}
+
+/* --------------------------------
+ * footer
+ * -------------------------------- */
+.footer {
+    background-color: rgb(47, 81, 103);
+    color: #fff;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+
+    font-size: 2rem;
+}
+
+.footer-list li {
+    line-height: 2;
+    font-size: 1.5rem;
+}
+
+.company-info{
+    display: block;
+}
+
+.flexBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;/*横幅が足りなくなった時に下に*/
+}
+
+.footer_company {
+  text-align: center;
+  margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.footer_copy {
+  text-align: center;
+    font-size: 1rem;
+}
+
+.fa {
+  font-size: 6rem;
+  margin: 10px;
+  color: #23648d;
+  text-shadow: 1px 1px #fff,
+               1px -1px #fff,
+               -1px -1px #fff,
+               -1px 1px #fff;
+  background: #fff;
+  border-radius: 10px;
+  line-height: 0.7;
+  transition: 0.2s;
+}
+
+.fa:hover {
+  color: #d57328;
+  transform: translateY(5px);
+}

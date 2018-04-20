@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/* --------------------------------
+ * base
+ * -------------------------------- */
+
+html {
+    font-size: 62.5%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    color: #fff;
+}
+
+/*1rem=10pxになる*/
+
+/* --------------------------------
+ * header
+ * -------------------------------- */
+
+.header {
+    background-color: rgb(135, 206, 250);
+    color: #fff;
+    height: 90px;
+    display: flex;
+}
+
+.logo01 {
+    margin: 5px 5px 5px 5px;
+    height: 80px;
+    width: auto;
+    border-radius: 50%;
+}
+
+li {
+    list-style: none;
+    font-size: 2rem;
+    margin: auto;
+
+}
+
+.header-list {
+    float: left;
+}
+
+.header-list li {
+    float: left;
+    padding: 20px 20px;
+
+}
+
+/* --------------------------------
+ * main
+ * -------------------------------- */
+
+.mainscreen {
+    background: linear-gradient(rgba(135, 206, 250, 0.6), rgba(47, 81, 103, 0.6)),
+    url(images/field960*854.jpg);
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+}
+
+
+
+
+/* --------------------------------
+ * footer
+ * -------------------------------- */
+
+.footer {
+    background-color: rgb(47, 81, 103);
+    color: #fff;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+
+    font-size: 2rem;
+}
+
+.footer-list li {
+    line-height: 2;
+    font-size: 1.5rem;
+}
+
+.company-info{
+    display: block;
+}
+
+.flexBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;/*横幅が足りなくなった時に下に*/
+}
+
+.footer_company {
+  text-align: center;
+  margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.footer_copy {
+  text-align: center;
+    font-size: 1rem;
+}
+
+.fa {
+  font-size: 6rem;
+  margin: 10px;
+  color: #23648d;
+  text-shadow: 1px 1px #fff,
+               1px -1px #fff,
+               -1px -1px #fff,
+               -1px 1px #fff;
+  background: #fff;
+  border-radius: 10px;
+  line-height: 0.7;
+  transition: 0.2s;
+}
+
+.fa:hover {
+  color: #d57328;
+  transform: translateY(5px);
+}

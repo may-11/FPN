@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <meta name="Keywords" content="里親, ペット">
+    <meta name="description" content="株式会社ZiQの研修プログラム用サンプルサイトです。">
+    <title>Foster Parents Network</title>
+    <link rel="stylesheet" href="fpn.css">
+    <script type="application/x-javascript" src="fpn.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="fpn.css">
+</head>
+
+<body>
+    <div class="header">
+            <img class="logo01" src="images/logo01.jpeg" alt="logo01">
+            <div class="header-list">
+                <ul>
+                    <li><a href="wfpn.html">FPNとは</a></li>
+                    <li><a href="ret.html">検索</a></li>
+                    <li>店舗・</li>
+                    <li><a href="con.html">お申し込み</a></li>
+                </ul>
+            </div>
+        </div>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/dog01.jpeg"></div>
+            <div class="swiper-slide"><img src="images/cat01.jpeg"></div>
+            <div class="swiper-slide"><img src="images/chick01.jpeg"></div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-logo">FPN</div>
+        <div class="company-info">
+            <div class="flexBox">
+                <div class="sns">
+                    <a href="#"><i class="fa fa-twitter-square"></i><span class="hidden">Twitter</span></a>
+                    <a href="#"><i class="fa fa-facebook-square"></i><span class="hidden">Facebook</span></a>
+                    <a href="#"><i class="fa fa-instagram"></i><span class="hidden">Instagram</span></a>
+                </div>
+            </div>
+
+            <address class="footer_company">〒106-0031 東京都港区西麻布1-14-5 永都ビルB1</address>
+            <p class="footer_copy">&copy; Foster Parents Network all rights reserved.</p>
+        </div>
+        <div class="footer-list">
+            <ul>
+                <li>会社概要</li>
+                <li>採用</li>
+                <li>お問い合わせ</li>
+            </ul>
+        </div>
+    </div>
+
+    <script type="application/x-javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>

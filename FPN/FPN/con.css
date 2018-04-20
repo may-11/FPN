@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/* --------------------------------
+ * base
+ * -------------------------------- */
+
+html {
+    font-size: 62.5%;
+    padding: 0;
+    margin: 0;
+}
+
+/*1rem=10pxになる*/
+
+/* --------------------------------
+ * parts　使い回すやつ
+ * -------------------------------- */
+
+/* --------------------------------
+ * header
+ * -------------------------------- */
+
+.header {
+    background-color: lightskyblue;
+    color: #fff;
+    height: 90px;
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+.header-logo {
+    font-size: 2rem;
+    float: left;
+    padding: 20px 40px;
+}
+
+.header-list {
+    float: left;
+}
+
+.header-list li {
+    float: left;
+    padding: 33px 20px;
+
+}
+
+/* --------------------------------
+ * main
+ * -------------------------------- */
+
+main {
+    background-color: #bdf7f1;
+}
+
+.contact-form {
+    border-bottom: 2px solid #dee7ec;
+    font-size: 28px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+}
+
+p{
+    margin: 0;
+}
+
+input {
+    width: 400px;
+    height: 20px;
+    margin-bottom: 30px;
+    padding:5px;
+    font-size: 18px;
+}
+
+input[type="submit"] {
+    height: auto;
+    width: 100px;
+}
+
+textarea {
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    font-size: 18px;
+    border: 2px solid #dee7ec;
+}
+
+.contact-submit {
+    background-color: aquamarine;
+    color: aliceblue;
+}
+
+/* --------------------------------
+ * footer
+ * -------------------------------- */
+
+.footer {
+    background-color: #2f5167;
+    color: #fff;
+    height: 120px;
+    padding: 40px;
+}
+
+.footer-logo {
+    float: left;
+    font-size: 2rem;
+}
+
+.footer-list {
+    float: right;
+}
+
+.footer-list li {
+    padding-bottom: 20px;
+}
